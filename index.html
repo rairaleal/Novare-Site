@@ -1,458 +1,362 @@
-<section class="reviews-section">
-        <div class="container">
-            <h2 style="text-align: center; color: #1e3c72; font-size: 2.5em; margin-bottom: 20px;">O que nossos clientes dizem</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 50px; font-size: 1.1em;">Confira as avaliações de quem já confia na Novare Contabilidade</p>
-            
-            <div class="reviews-container">
-                <!-- Elfsight Google Reviews Widget -->
-                <script src="https://elfsightcdn.com/platform.js" async></script>
-                <div class="elfsight-app-0e8150e7-fe92-4b40-8987-5b0d7cc45d92" data-elfsight-app-lazy></div>
-            </div>
-        </div>
-    </section>    <section class="contact-section">
-        <div class="container">
-            <h2 style="text-align: center; color: #1e3c72; font-size: 2.5em; margin-bottom: 50px;">Entre em Contato</h2>
-            
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Nosso Endereço</h3>
-                    <p>Rua Cipreste, 75<br>Centro - Eusébio, Ceará</p>
-                    
-                    <h3 style="margin-top: 30px;">Redes Sociais</h3>
-                    <div class="social-links">
-                        <a href="https://wa.me/5585996778884" target="_blank" class="social-btn whatsapp">
-                            💬 WhatsApp
-                        </a>
-                        <a href="https://instagram.com/contabilidade.novare" target="_blank" class="social-btn instagram">
-                            📸 Instagram
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0123456789!2d-38.6456789!3d-3.7645678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7d8e9f%3A0x123456789!2sRua%20Cipreste%2C%2075%20-%20Centro%2C%20Eus%C3%A9bio%2C%20CE!5e0!3m2!1spt-BR!2sbr!4v1234567890" width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        .success-message {
-            display: none;
-            background: #d4edda;
-            color: #155724;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2em;
-            }
-            
-            .form-container {
-                padding: 25px;
-            }
-        }<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novare Contabilidade - Soluções Contábeis Inteligentes</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
+<title>Novare Contabilidade | Abertura de Empresas e Contabilidade Estratégica</title>
 
-        .hero {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7ba7d6 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
+<style>
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
 
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
+body{
+color:#333;
+line-height:1.6;
+}
 
-        .hero p {
-            font-size: 1.3em;
-            margin-bottom: 30px;
-            opacity: 0.95;
-        }
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
 
-        .benefits {
-            background: #f8f9fa;
-            padding: 60px 20px;
-        }
+.hero{
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+color:white;
+text-align:center;
+padding:100px 20px;
+}
 
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
+.hero h1{
+font-size:3em;
+margin-bottom:20px;
+}
 
-        .benefit-card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
+.hero p{
+font-size:1.3em;
+margin-bottom:30px;
+}
 
-        .benefit-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(30, 60, 114, 0.2);
-        }
+.cta{
+display:inline-block;
+background:#25D366;
+padding:15px 30px;
+border-radius:8px;
+color:white;
+font-weight:bold;
+text-decoration:none;
+margin:10px;
+}
 
-        .benefit-icon {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
+.cta.secondary{
+background:white;
+color:#1e3c72;
+}
 
-        .benefit-card h3 {
-            color: #1e3c72;
-            margin-bottom: 10px;
-        }
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+text-align:center;
+padding:40px 20px;
+background:#f4f6f9;
+}
 
-        .form-section {
-            background: white;
-            padding: 60px 20px;
-        }
+.stat{
+font-size:1.2em;
+font-weight:600;
+}
 
-        .form-section h2 {
-            text-align: center;
-            color: #1e3c72;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
+.section{
+padding:70px 20px;
+}
 
-        .form-section p {
-            text-align: center;
-            color: #666;
-            margin-bottom: 40px;
-            font-size: 1.1em;
-        }
+.section h2{
+text-align:center;
+color:#1e3c72;
+margin-bottom:40px;
+font-size:2.3em;
+}
 
-        .form-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #f8f9fa;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(30, 60, 114, 0.15);
-        }
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
 
-        .form-group {
-            margin-bottom: 25px;
-        }
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+text-align:center;
+}
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-            color: #1e3c72;
-            font-weight: 600;
-        }
+.card h3{
+margin-top:10px;
+color:#1e3c72;
+}
 
-        input, select {
-            width: 100%;
-            padding: 15px;
-            border: 2px solid #d1d9e6;
-            border-radius: 8px;
-            font-size: 1em;
-            transition: border-color 0.3s;
-        }
+.services .card{
+text-align:left;
+}
 
-        input:focus, select:focus {
-            outline: none;
-            border-color: #2a5298;
-        }
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
+}
 
-        .submit-btn {
-            width: 100%;
-            padding: 18px;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.2em;
-            font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
+.form-section{
+background:#f4f6f9;
+}
 
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(30, 60, 114, 0.3);
-        }
+.form-container{
+max-width:500px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
 
-        .footer {
-            background: #1e3c72;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-        }
+.form-group{
+margin-bottom:20px;
+}
 
-        .contact-section {
-            background: white;
-            padding: 60px 20px;
-        }
+input,select{
+width:100%;
+padding:14px;
+border-radius:6px;
+border:1px solid #ccc;
+}
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
+button{
+width:100%;
+padding:15px;
+background:#1e3c72;
+color:white;
+border:none;
+border-radius:6px;
+font-size:1.1em;
+cursor:pointer;
+}
 
-        .contact-info h3 {
-            color: #1e3c72;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
+.footer{
+background:#1e3c72;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
 
-        .contact-info p {
-            color: #666;
-            font-size: 1.05em;
-            line-height: 1.8;
-        }
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+color:white;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
 
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-btn {
-            display: inline-block;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: transform 0.3s, box-shadow 0.3s;
-            color: white;
-        }
-
-        .social-btn.whatsapp {
-            background: #25D366;
-        }
-
-        .social-btn.instagram {
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-        }
-
-        .social-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-        }
-
-        .map-container {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .reviews-section {
-            background: #f8f9fa;
-            padding: 60px 20px;
-        }
-
-        .reviews-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .review-placeholder {
-            min-height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #fafbfc;
-            border: 2px dashed #d1d9e6;
-            border-radius: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .contact-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .map-container iframe {
-                min-height: 300px !important;
-            }
-        }
-    </style>
+</style>
 </head>
+
 <body>
-    <section class="hero">
-        <div class="container">
-            <h1>Novare Contabilidade</h1>
-            <p>Soluções contábeis inteligentes para o crescimento do seu negócio</p>
-        </div>
-    </section>
 
-    <section class="benefits">
-        <div class="container">
-            <h2 style="text-align: center; color: #1e3c72; font-size: 2.5em; margin-bottom: 20px;">Por que escolher a Novare?</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <div class="benefit-icon">📊</div>
-                    <h3>Gestão Completa</h3>
-                    <p>Cuidamos de toda parte contábil, fiscal e tributária da sua empresa</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">💡</div>
-                    <h3>Consultoria Estratégica</h3>
-                    <p>Orientação especializada para decisões financeiras inteligentes</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">⚡</div>
-                    <h3>Agilidade</h3>
-                    <p>Processos otimizados e atendimento rápido quando você precisa</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">🔒</div>
-                    <h3>Segurança</h3>
-                    <p>Total conformidade com a legislação e proteção das suas informações</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="hero">
 
-    <section class="form-section">
-        <div class="container">
-            <h2>Solicite uma Proposta</h2>
-            <p>Preencha o formulário e nossa equipe entrará em contato em breve</p>
-            
-            <div class="form-container">
-                <div id="successMessage" class="success-message">
-                    ✓ Obrigado! Recebemos suas informações e entraremos em contato em breve.
-                </div>
-                
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="cnpj">CNPJ *</label>
-                        <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" required>
-                    </div>
+<div class="container">
 
-                    <div class="form-group">
-                        <label for="razaoSocial">Razão Social *</label>
-                        <input type="text" id="razaoSocial" name="razaoSocial" placeholder="Nome da empresa" required>
-                    </div>
+<h1>Abra sua empresa com segurança e pague menos impostos</h1>
 
-                    <div class="form-group">
-                        <label for="segmento">Segmento da Empresa *</label>
-                        <select id="segmento" name="segmento" required>
-                            <option value="">Selecione o segmento</option>
-                            <option value="Comércio">Comércio</option>
-                            <option value="Indústria">Indústria</option>
-                            <option value="Serviços">Serviços</option>
-                            <option value="Tecnologia">Tecnologia</option>
-                            <option value="Saúde">Saúde</option>
-                            <option value="Educação">Educação</option>
-                            <option value="Construção">Construção Civil</option>
-                            <option value="Alimentação">Alimentação</option>
-                            <option value="Transporte">Transporte e Logística</option>
-                            <option value="Outro">Outro</option>
-                        </select>
-                    </div>
+<p>
+Contabilidade especializada em pequenas empresas, prestadores de serviço
+e clínicas com atendimento rápido e humanizado.
+</p>
 
-                    <div class="form-group">
-                        <label for="whatsapp">WhatsApp *</label>
-                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(85) 99999-9999" required>
-                    </div>
+<a class="cta" href="#formulario">Abrir minha empresa</a>
 
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="seu@email.com">
-                    </div>
+<a class="cta secondary" href="https://wa.me/5585996778884" target="_blank">
+Falar com especialista
+</a>
 
-                    <button type="submit" class="submit-btn">Solicitar Contato</button>
-                </form>
-            </div>
-        </div>
-    </section>
+</div>
 
-    <footer class="footer">
-        <p>&copy; 2025 Novare Contabilidade - Todos os direitos reservados</p>
-    </footer>
+</section>
 
-    <script>
-        // Máscara para CNPJ
-        document.getElementById('cnpj').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length <= 14) {
-                value = value.replace(/^(\d{2})(\d)/, '$1.$2');
-                value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
-                value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
-                value = value.replace(/(\d{4})(\d)/, '$1-$2');
-                e.target.value = value;
-            }
-        });
+<section class="stats">
 
-        // Máscara para WhatsApp
-        document.getElementById('whatsapp').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, '');
-            if (value.length <= 11) {
-                value = value.replace(/^(\d{2})(\d)/, '($1) $2');
-                value = value.replace(/(\d{5})(\d)/, '$1-$2');
-                e.target.value = value;
-            }
-        });
+<div class="stat">+10 anos de experiência</div>
+<div class="stat">Fundada em 2014</div>
+<div class="stat">Atendimento em todo Brasil</div>
+<div class="stat">Especialistas em pequenas empresas</div>
 
-        // Envio do formulário
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const cnpj = document.getElementById('cnpj').value;
-            const razaoSocial = document.getElementById('razaoSocial').value;
-            const segmento = document.getElementById('segmento').value;
-            const whatsapp = document.getElementById('whatsapp').value;
-            const email = document.getElementById('email').value;
+</section>
 
-            // Formatar número para WhatsApp (remover caracteres especiais)
-            const whatsappClean = whatsapp.replace(/\D/g, '');
-            
-            // Preparar mensagem
-            const mensagem = `Olá! Gostaria de solicitar os serviços de contabilidade da Novare.%0A%0ACNPJ: ${cnpj}%0ARazão Social: ${razaoSocial}%0ASegmento: ${segmento}%0AE-mail: ${email}`;
-            
-            // Link do WhatsApp com o número da Novare Contabilidade
-            const whatsappLink = `https://wa.me/5585996778884?text=${mensagem}`;
-            
-            // Abrir WhatsApp
-            window.open(whatsappLink, '_blank');
-            
-            // Mostrar mensagem de sucesso
-            document.getElementById('successMessage').style.display = 'block';
-            document.getElementById('contactForm').reset();
-            
-            setTimeout(() => {
-                document.getElementById('successMessage').style.display = 'none';
-            }, 5000);
-        });
-    </script>
+<section class="section">
+
+<div class="container">
+
+<h2>Para quem atendemos</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Empresas de Serviço</h3>
+<p>Contabilidade especializada para prestadores de serviço e profissionais liberais.</p>
+</div>
+
+<div class="card">
+<h3>Clínicas</h3>
+<p>Soluções contábeis para clínicas médicas, odontológicas e profissionais da saúde.</p>
+</div>
+
+<div class="card">
+<h3>Pequenas Empresas</h3>
+<p>Gestão contábil completa para empresas em crescimento.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section services">
+
+<div class="container">
+
+<h2>Nossos Serviços</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Abertura de Empresa</h3>
+<p>Abra sua empresa de forma rápida e segura.</p>
+</div>
+
+<div class="card">
+<h3>Contabilidade Completa</h3>
+<p>Gestão contábil, fiscal e tributária da sua empresa.</p>
+</div>
+
+<div class="card">
+<h3>Planejamento Tributário</h3>
+<p>Estratégias para reduzir impostos legalmente.</p>
+</div>
+
+<div class="card">
+<h3>BPO Financeiro</h3>
+<p>Gestão financeira profissional para seu negócio.</p>
+</div>
+
+<div class="card">
+<h3>BI Financeiro</h3>
+<p>Análises estratégicas e indicadores para decisões melhores.</p>
+</div>
+
+<div class="card">
+<h3>Regularização Fiscal</h3>
+<p>Regularize sua empresa e evite problemas com o fisco.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container about">
+
+<h2>Sobre a Novare</h2>
+
+<p>
+Fundada em 2014, a Novare Contabilidade tem a missão de oferecer um atendimento
+rápido, objetivo e humanizado para empresas que desejam crescer com segurança.
+</p>
+
+<p>
+Atendemos pequenas empresas, prestadores de serviço e clínicas em todo o Brasil,
+oferecendo soluções contábeis completas e consultoria estratégica.
+</p>
+
+<p><strong>Responsável:</strong> Maria Luiza</p>
+
+</div>
+
+</section>
+
+<section class="section form-section" id="formulario">
+
+<div class="container">
+
+<h2>Abra sua empresa com especialistas</h2>
+
+<div class="form-container">
+
+<form id="form">
+
+<div class="form-group">
+<input type="text" placeholder="Seu nome" required>
+</div>
+
+<div class="form-group">
+<input type="tel" placeholder="WhatsApp" required>
+</div>
+
+<div class="form-group">
+<select required>
+<option>Tipo de empresa</option>
+<option>Prestação de serviços</option>
+<option>Clínica</option>
+<option>Comércio</option>
+<option>Outro</option>
+</select>
+</div>
+
+<div class="form-group">
+<input type="text" placeholder="Cidade">
+</div>
+
+<button type="submit">Quero abrir minha empresa</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<p>
+© 2026 Novare Contabilidade - Todos os direitos reservados
+</p>
+
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/5585996778884" target="_blank">
+💬
+</a>
+
 </body>
+
 </html>
+```
